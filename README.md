@@ -23,7 +23,7 @@ It provides all the essential backend features needed for an online store, inclu
 
 ## 🛠️ Tech Stack
 
-- **Node.js** (v16+)
+- **Node.js** (v22)
 - **Express.js**
 - **MongoDB & Mongoose**
 - **Multer & Sharp** for image handling
@@ -61,7 +61,7 @@ npm install
 Setup environment variables
 Create a config.env file in the root directory with the following:
 
-PORT=5000
+PORT=3000
 NODE_ENV=development
 DB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
