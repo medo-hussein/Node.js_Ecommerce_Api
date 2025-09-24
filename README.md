@@ -23,7 +23,7 @@ It provides all the essential backend features needed for an online store, inclu
 
 ## 🛠️ Tech Stack
 
-- **Node.js** (v22)
+- **Node.js** (v22+)
 - **Express.js**
 - **MongoDB & Mongoose**
 - **Multer & Sharp** for image handling
@@ -33,15 +33,19 @@ It provides all the essential backend features needed for an online store, inclu
 
 ---
 
-├── config/ # Database and environment configs
-├── controllers/ # Route controllers
-├── middlewares/ # Custom middleware (auth, error handling, etc.)
-├── models/ # Mongoose models
-├── routes/ # Express routes
-├── utils/ # Helper functions
-├── server.js # Main server entry point
-└── package.json
+## 📂 Project Structure
 
+```
+.
+├── config/         # Database and environment configs
+├── controllers/    # Route controllers
+├── middlewares/    # Custom middleware (auth, error handling, etc.)
+├── models/         # Mongoose models
+├── routes/         # Express routes
+├── utils/          # Helper functions
+├── server.js       # Main server entry point
+└── package.json
+```
 
 ---
 
@@ -51,29 +55,37 @@ It provides all the essential backend features needed for an online store, inclu
    ```bash
    git clone https://github.com/medo-hussein/Node.js_Ecommerce_Api.git
    cd Node.js_Ecommerce_Api
+   ```
 
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Install dependencies
+3. **Setup environment variables**
+   Create a `config.env` file in the root directory with the following:
+   ```
+   PORT=3000
+   NODE_ENV=development
+   DB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   STRIPE_SECRET=your_stripe_secret
+   ```
 
-npm install
+4. **Run the server**
+   ```bash
+   npm run start:dev
+   ```
 
+---
 
-Setup environment variables
-Create a config.env file in the root directory with the following:
+## 📌 API Documentation
 
-PORT=3000
-NODE_ENV=development
-DB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-STRIPE_SECRET=your_stripe_secret
+👉 Full API documentation is available via **Postman collection** (to be added).
 
+---
 
-Run the server
+## 📜 License
 
-npm run start:dev
-
-📌 API Documentation
-
-👉 Full API documentation is available via Postman collection (to be added).
-## 📂 Project Structure
-
+This project is licensed under the **MIT License**.  
+Feel free to use it in your own projects.
